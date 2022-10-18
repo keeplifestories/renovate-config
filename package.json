@@ -1,0 +1,41 @@
+{
+  "name": "@keeplifestories/renovate-config",
+  "description": "Centralized Renovate Controls",
+  "version": "0.0.0",
+  "author": "Philihp Busby <philihp@joinhoneycomb.com>",
+  "homepage": "https://github.com/keeplifestories/renovate-config",
+  "keywords": [
+    "renovate"
+  ],
+  "license": "MIT",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base",
+        "docker:disable",
+        ":dependencyDashboard",
+        ":timezone(UTC)",
+        ":prConcurrentLimit20",
+        "schedule:earlyMondays"
+      ],
+      "dependencyDashboard": true,
+      "dependencyDashboardTitle": "Independency Dashboard",
+      "transitiveRemediation": true,
+      "packageRules": [
+        {
+          "updateTypes": [
+            "patch",
+            "pin"
+          ],
+          "automerge": true
+        },
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "automerge": true
+        }
+      ]
+    }
+  }
+}
