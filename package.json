@@ -8,6 +8,9 @@
     "renovate"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "renovate-config": {
     "default": {
       "extends": [
