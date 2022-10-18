@@ -1,7 +1,7 @@
 {
   "name": "@keeplifestories/renovate-config",
   "description": "Centralized Renovate Controls",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Philihp Busby <philihp@joinhoneycomb.com>",
   "homepage": "https://github.com/keeplifestories/renovate-config",
   "keywords": [
